@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WebPart xmlns="http://schemas.microsoft.com/WebPart/v2" >
+	<Title>SharePoint Forums</Title>
+	<Description>Replacement for SharePoint Discussion Boards using threaded forums, categories, and more.</Description>
+	<Assembly>BilSimser.SharePoint.WebParts.Forums, Version=1.2.0.0, Culture=neutral, PublicKeyToken=e516dadc23877c32</Assembly>
+	<TypeName>BilSimser.SharePoint.WebParts.Forums.SharePointForumWebPart</TypeName>
+	<!-- Specify initial values for any additional base class or custom properties here. -->
+	<FrameType>None</FrameType>
+</WebPart>

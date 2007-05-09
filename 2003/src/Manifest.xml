@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<WebPartManifest xmlns="http://schemas.microsoft.com/WebPart/v2/Manifest">
+  <Assemblies>
+    <Assembly FileName="BilSimser.SharePoint.WebParts.Forums.dll">
+		<ClassResources>
+            <ClassResource FileName="1033.lng.xml" />
+        </ClassResources>
+      <SafeControls>
+        <SafeControl
+          Namespace="BilSimser.SharePoint.WebParts.Forums"
+          TypeName="*"
+        />
+      </SafeControls>
+      <SafeControls>
+        <SafeControl
+          Namespace="BilSimser.SharePoint.WebParts.Forums.Controls"
+          TypeName="*"
+        />
+      </SafeControls>
+      <SafeControls>
+        <SafeControl
+          Namespace="BilSimser.SharePoint.WebParts.Forums.Controls.Base"
+          TypeName="*"
+        />
+      </SafeControls>
+      <SafeControls>
+        <SafeControl
+          Namespace="BilSimser.SharePoint.WebParts.Forums.Controls.Common"
+          TypeName="*"
+        />
+      </SafeControls>
+    </Assembly>
+    <Assembly FileName="BilSimser.SharePoint.Common.dll" />
+  </Assemblies>
+  <DwpFiles>
+    <DwpFile FileName="SharePointForums.dwp"/>
+  </DwpFiles>
+</WebPartManifest>

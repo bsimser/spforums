@@ -1,0 +1,37 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharePointForums.WebPart", "src\SharePointForums.WebPart.csproj", "{495E3A91-8CAF-4D84-9DCF-1633067ED18C}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharePointForums.UnitTests", "tests\SharePointForums.UnitTests.csproj", "{15580B3A-F5C1-4CDC-A687-9C1DAED23DF3}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{495E3A91-8CAF-4D84-9DCF-1633067ED18C}.Debug.ActiveCfg = Debug|.NET
+		{495E3A91-8CAF-4D84-9DCF-1633067ED18C}.Debug.Build.0 = Debug|.NET
+		{495E3A91-8CAF-4D84-9DCF-1633067ED18C}.Release.ActiveCfg = Release|.NET
+		{495E3A91-8CAF-4D84-9DCF-1633067ED18C}.Release.Build.0 = Release|.NET
+		{15580B3A-F5C1-4CDC-A687-9C1DAED23DF3}.Debug.ActiveCfg = Debug|.NET
+		{15580B3A-F5C1-4CDC-A687-9C1DAED23DF3}.Debug.Build.0 = Debug|.NET
+		{15580B3A-F5C1-4CDC-A687-9C1DAED23DF3}.Release.ActiveCfg = Release|.NET
+		{15580B3A-F5C1-4CDC-A687-9C1DAED23DF3}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(SolutionItems) = postSolution
+		1033.lng.xml = 1033.lng.xml
+		DrinkMe.txt = DrinkMe.txt
+		SharePointForums-1.0.0.0.xml = SharePointForums-1.0.0.0.xml
+		SharePointForums-1.1.0.0.xml = SharePointForums-1.1.0.0.xml
+		SharePointForums-1.2.0.0.xml = SharePointForums-1.2.0.0.xml
+		SharePointForums.build = SharePointForums.build
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
