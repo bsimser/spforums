@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<project name="SharePoint Forums Web Part" default="deploy">
+
+	<property name="build.version" value="1.2.0.0" />
+	<property name="config.build" value="Release" />
+	<property name="output.dir" value="build" />
+	<property name="deploy.dir" value="C:\Inetpub\wwwroot\bin" />
+	<property name="resource.dir" value="C:\Inetpub\wwwroot\wpresources\BilSimser.SharePoint.WebParts.Forums" />
+	<property name="wppackager.dir" value="C:\Program Files\WPPackager" />
+	<property name="common.dll.dir" value="..\..\common\output" />
+
+	<target name="clean" description="cleans out the build directory where output files go">
+		<delete dir="${output.dir}" failonerror="false" />
+	</target>
+	
+	<target name="test" depends="build" description="runs all the unit tests for the web part">
+		<nunit2>
+			<formatter type="Plain"/>
+			<test assemblyname="${output.dir}\BilSimser.SharePoint.WebParts.Forums.UnitTests.dll">
+			</test>
+		</nunit2>
+	</target>
+	
+	<target name="build" depends="clean" description="builds the solution and outputs to the output directory">
+		<solution 
+			solutionfile="SharePointForums.sln" 
+			configuration="${config.build}" 
+			outputdir="${output.dir}" />
+	</target>
+	
+	<target name="deploy" depends="build" description="builds the system then deploys to the SharePoint directories">
+		<copy todir="${deploy.dir}">
+			<fileset basedir="${output.dir}">
+				<include name="*.dll" />
+				<exclude name="*.UnitTests.dll" />
+			</fileset>
+		</copy>
+		<copy todir="${resource.dir}">
+			<fileset basedir=".">
+				<include name="*.lng.xml" />
+			</fileset>
+		</copy>
+	</target>
+	
+	<target name="dist" description="create a distribution MSI for the web part" depends="build">
+
+		<!-- Copy the files needed by WPPackager to the build directory -->
+		<copy todir="${output.dir}" flatten="true">
+			<fileset>
+				<include name="${common.dll.dir}\BilSimser.SharePoint.Common.dll" />
+				<include name="SharePointForums-${build.version}.xml" />
+				<include name="src\Manifest.xml" />
+				<include name="src\SharePointForums.dwp" />
+				<include name="*.lng.xml" />
+			</fileset>
+		</copy>
+
+		<!-- Use WPPackager to create a MSI -->
+		<exec program="WPPackager.exe" basedir="${wppackager.dir}" workingdir="${output.dir}">
+			<arg value="SharePointForums-${build.version}.xml" />
+		</exec>
+
+	</target>
+	
+	<target name="install" description="installs the web part using the MSI installer" depends="dist">
+		<exec program="SharePointForums-${build.version}.MSI" basedir="${output.dir}" />
+	</target>
+
+</project>

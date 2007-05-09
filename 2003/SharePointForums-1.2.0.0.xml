@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+
+<!--
+	WPPackager file for SharePoint Forums Web Part
+	Version 1.2.0.0
+	GAC install
+-->
+
+<Wppackager xmlns="http://schemas.microsoft.com/WebPart/v1/Wppackager">
+
+	<Manifest FileName="Manifest.xml" /> 
+
+	<!--
+   <CodeAccessSecurity 
+		AssemblyName="BilSimser.SharePoint.WebParts.Forums" 
+		Version="1.1.0.0" 
+		PublicKeyBlob="0024000004800000940000000602000000240000525341310004000001000100F15CA89A80D45C052CC5003DDAD661CEA98168E5B12A7BEC2A8B455D1E7D043C9248BC192A16B02B4D1CCF41738C31797CFFED01C70EE6247222243FA3B10706368EDE73C57BAF586582F83CB9391DA711DFF5B8169A9AD6169D6023B5C6572136233AC331010CE4C808143B2E2AB18FE59A872340DB76F71180623789336DAB" >
+   </CodeAccessSecurity>
+	-->
+	
+	<MSI 
+		Name="SharePointForums-1.2.0.0" 
+		Version="1.2.0.0" 
+		Manufacturer="Bil Simser" /> 
+
+</Wppackager>
