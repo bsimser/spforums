@@ -1,5 +1,26 @@
-Welcome to the SharePoint Forums Web Part Project!
-==================================================
+Welcome to the SharePoint Forums Project!
+=========================================
+
+The SharePoint Forums Web Part is a free, open source, single web part that provides a more feature rich discussion board for SharePoint based sites.
+
+SharePoint Forums CodePlex page:
+http://www.codeplex.com/SPFORUMS
+
+SharePoint Forums Roadmap:
+http://www.codeplex.com/SPFORUMS/Wiki/View.aspx?title=RoadMap
+
+Related links:
+SharePoint Forums Blog
+http://weblogs.asp.net/bsimser/archive/tags/SharePoint+Forums/default.aspx
+
+Online Documentation
+http://www.codeplex.com/SPFORUMS/Wiki/View.aspx?title=SharePoint%20Forums%20Documentation&referringTitle=Home
+
+Discussion Forums
+http://www.codeplex.com/SPFORUMS/Thread/List.aspx
+
+Issue Tracker
+http://www.codeplex.com/SPFORUMS/WorkItem/List.aspx
 
 For more information about this project please contact Bil Simser:
 
