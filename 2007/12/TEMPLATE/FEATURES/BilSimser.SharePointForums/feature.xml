@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature  Id="76a7453d-4c62-4f11-98d7-500d24198777"
+          Title="SharePoint Forums"
+          Description="The SharePoint Forums is a free, open source, single web part that provides a more feature rich discussion board for SharePoint based sites."
+          Version="2.0.0.0"
+          Hidden="FALSE"
+          Scope="Web"
+          DefaultResourceFile="core"
+          ReceiverAssembly="BilSimser.SharePointForums, Version=1.0.0.0, Culture=neutral, PublicKeyToken=9e973e9dc3dba049"
+          ReceiverClass="BilSimser.SharePointForums.FeatureCode.SharePointForumsFeatureReceiver"
+          xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ElementManifests>
+    <ElementManifest Location="elements.xml"/>
+  </ElementManifests>
+</Feature>

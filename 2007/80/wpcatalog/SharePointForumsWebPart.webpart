@@ -1,0 +1,14 @@
+﻿<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="BilSimser.SharePointForums.WebPartCode.SharePointForumsWebPart, BilSimser.SharePointForums, Version=1.0.0.0, Culture=neutral, PublicKeyToken=9e973e9dc3dba049" />
+      <importErrorMessage>Cannot import SharePointForumsWebPart Web Part.</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">SharePoint Forums</property>
+        <property name="Description" type="string">The SharePoint Forums is a free, open source, single web part that provides a more feature rich discussion board for SharePoint based sites.</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>
