@@ -6,7 +6,7 @@
           Hidden="FALSE"
           Scope="Web"
           DefaultResourceFile="core"
-          ReceiverAssembly="BilSimser.SharePointForums, Version=1.0.0.0, Culture=neutral, PublicKeyToken=9e973e9dc3dba049"
+          ReceiverAssembly="BilSimser.SharePointForums, Version=2.0.0.0, Culture=neutral, PublicKeyToken=9e973e9dc3dba049"
           ReceiverClass="BilSimser.SharePointForums.FeatureCode.SharePointForumsFeatureReceiver"
           xmlns="http://schemas.microsoft.com/sharepoint/">
   <ElementManifests>
