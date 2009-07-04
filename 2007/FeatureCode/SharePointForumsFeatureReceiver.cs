@@ -6,7 +6,14 @@ namespace BilSimser.SharePointForums.FeatureCode
     {
         public override void FeatureActivated(SPFeatureReceiverProperties properties)
         {
-            // TODO: create lists
+            var director = new ListDirector();
+            director.ConstructList(new GroupListBuilder());
+            director.ConstructList(new UserListBuilder());
+            director.ConstructList(new CategoryListBuilder());
+            director.ConstructList(new ForumAccessListBuilder());
+            director.ConstructList(new ForumListBuilder());
+            director.ConstructList(new TopicListBuilder());
+            director.ConstructList(new MessageListBuilder());
         }
 
         public override void FeatureDeactivating(SPFeatureReceiverProperties properties)
