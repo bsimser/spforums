@@ -30,7 +30,7 @@ namespace BilSimser.SharePointForums.WebPartCode
             {
                 if (_myProperty == null)
                 {
-                    _myProperty = "Hello SharePoint";
+                    _myProperty = "Version 2.0 (2007) of the forums, coming soon!";
                 }
                 return _myProperty;
             }
