@@ -62,9 +62,54 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FeatureCode\CategoryListBuilder.cs" />
+    <Compile Include="FeatureCode\ForumAccessListBuilder.cs" />
+    <Compile Include="FeatureCode\ForumListBuilder.cs" />
+    <Compile Include="FeatureCode\GroupListBuilder.cs" />
+    <Compile Include="FeatureCode\ListBuilder.cs" />
+    <Compile Include="FeatureCode\ListDirector.cs" />
+    <Compile Include="FeatureCode\MessageListBuilder.cs" />
     <Compile Include="FeatureCode\SharePointForumsFeatureReceiver.cs" />
+    <Compile Include="FeatureCode\TopicListBuilder.cs" />
+    <Compile Include="FeatureCode\UserListBuilder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebPartCode\Category.cs" />
+    <Compile Include="WebPartCode\CategoryDao.cs" />
+    <Compile Include="WebPartCode\CategoryMapper.cs" />
+    <Compile Include="WebPartCode\CategoryRepository.cs" />
+    <Compile Include="WebPartCode\DataProviderBase.cs" />
+    <Compile Include="WebPartCode\DomainObject.cs" />
+    <Compile Include="WebPartCode\Forum.cs" />
+    <Compile Include="WebPartCode\ForumApplication.cs" />
+    <Compile Include="WebPartCode\ForumConstants.cs" />
+    <Compile Include="WebPartCode\ForumDao.cs" />
+    <Compile Include="WebPartCode\ForumMapper.cs" />
+    <Compile Include="WebPartCode\ForumRepository.cs" />
+    <Compile Include="WebPartCode\ForumUser.cs" />
+    <Compile Include="WebPartCode\ForumUserDao.cs" />
+    <Compile Include="WebPartCode\ForumUserRepository.cs" />
+    <Compile Include="WebPartCode\Group.cs" />
+    <Compile Include="WebPartCode\GroupDao.cs" />
+    <Compile Include="WebPartCode\GroupRepository.cs" />
+    <Compile Include="WebPartCode\Identity.cs" />
+    <Compile Include="WebPartCode\Message.cs" />
+    <Compile Include="WebPartCode\MessageDao.cs" />
+    <Compile Include="WebPartCode\MessageMapper.cs" />
+    <Compile Include="WebPartCode\MessageRepository.cs" />
+    <Compile Include="WebPartCode\Permission.cs" />
+    <Compile Include="WebPartCode\RepositoryRegistry.cs" />
+    <Compile Include="WebPartCode\SharePointForumControls.cs" />
     <Compile Include="WebPartCode\SharePointForumsWebPart.cs" />
+    <Compile Include="WebPartCode\SharePointListDescriptor.cs" />
+    <Compile Include="WebPartCode\SharePointListField.cs" />
+    <Compile Include="WebPartCode\SharePointListItem.cs" />
+    <Compile Include="WebPartCode\SharePointListProvider.cs" />
+    <Compile Include="WebPartCode\SharePointProvider.cs" />
+    <Compile Include="WebPartCode\Topic.cs" />
+    <Compile Include="WebPartCode\TopicDao.cs" />
+    <Compile Include="WebPartCode\TopicMapper.cs" />
+    <Compile Include="WebPartCode\TopicRepository.cs" />
+    <Compile Include="WebPartCode\UserMapper.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="12\TEMPLATE\FEATURES\BilSimser.SharePointForums\elements.xml" />
