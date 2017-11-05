@@ -1,0 +1,1 @@
+{rss:url=http://weblogs.asp.net/bsimser/rss.aspx?Tags=SharePoint+Forums&AndTags=1}

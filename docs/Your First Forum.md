@@ -1,0 +1,2 @@
+### Your First Forum
+After installing the Web Part and adding it to a site, the Web Part will automatically create the files it needs to operate. In doing this it also creates a sample Category, Forum, Topic, and Post. You may modify this, reply to it, try it out, or simply delete it to start using your system.
